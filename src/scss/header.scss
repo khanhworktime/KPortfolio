@@ -1,0 +1,129 @@
+
+header{
+    padding: 30px 40px;
+    position: relative;
+    font-family: $font-mono;
+    .logo{
+        width: $logo-small;
+        height: $logo-small;
+        cursor: pointer;
+    }
+    .menu{
+        transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+        list-style: none;
+        li{
+            padding-left: 32px;
+            color: $c-light-green;
+            .opt{
+                color: $c-light-slate;
+            }
+            .opt:hover{
+                color: inherit;
+            }
+        }
+    }
+    .side-menu.closed{
+        position: fixed;
+        transform: translateX(100vw);
+        visibility: hidden;
+
+    }
+    .side-menu{
+        position: fixed;
+        padding: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        transform: translateX(0vw);
+        visibility: visible;
+        z-index: 100;
+        width: 70vw;
+        background-color: $c-navy;
+        li{
+            margin-bottom: 30px;
+            text-align: center;
+            padding: 0;
+        }
+    }
+    .menu-ham{
+        width: 30px;
+        height: 24px;
+        position: relative;
+        cursor: pointer;
+        z-index: 999;
+    }
+    .ham-stack{
+        .ham-box-inner{
+            position: absolute;
+            top: 50%;
+            right: 0px;
+            width: 30px;
+            height: 2px;
+            border-radius: 4px;
+            background-color: $c-light-green;
+            transition: transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0s;
+            transform: rotate(0deg);
+        }
+        .ham-box-inner::before, .ham-box-inner::after{
+            content: "";
+            display: block;
+            position: absolute;
+            left: auto;
+            right: 0px;
+            width: 30px;
+            height: 2px;
+            border-radius: 4px;
+            background-color: $c-light-green;
+            transition-timing-function: ease;
+            transition-duration: 0.15s;
+            transition-property: transform;
+        }
+        .ham-box-inner::before{
+            width: 120%;
+            top: -10px;
+            opacity: 1;
+        }
+        .ham-box-inner::after{
+            width: 80%;
+            bottom: -10px;
+            transform: rotate(0deg);
+        }
+    }
+    .ham-close{
+        .ham-box-inner{
+            position: absolute;
+            top: 50%;
+            right: 0px;
+            width: 30px;
+            height: 2px;
+            border-radius: 4px;
+            background-color: $c-light-green;
+            transition: transform 0.22s cubic-bezier(0.215, 0.61, 0.355, 1) 0.12s;
+            transform: rotate(225deg);
+        }
+        .ham-box-inner::before, .ham-box-inner::after{
+            content: "";
+            display: block;
+            position: absolute;
+            left: auto;
+            right: 0px;
+            width: 30px;
+            height: 2px;
+            border-radius: 4px;
+            background-color: $c-light-green;
+            transition-timing-function: ease;
+            transition-duration: 0.15s;
+            transition-property: transform;
+        }
+        .ham-box-inner::before{
+            width: 100%;
+            top: 0px;
+            opacity: 0;
+        }
+        .ham-box-inner::after{
+            width: 100%;
+            bottom: 0px;
+            transform: rotate(-90deg);
+        }
+    }
+}
