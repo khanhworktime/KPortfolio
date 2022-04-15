@@ -1,3 +1,4 @@
+
 // Font
 $font-primary: "Poppins";
 $font-mono: monospace;
@@ -6,11 +7,17 @@ $font-mono: monospace;
 $c-background: #0a192f;
 $c-navy: #112240;
 $c-slate: #8892b0;
-$c-light-slate: #ccd6f6;
-$c-light-green: #64ffda;
+$c-l-slate: #ccd6f6;
+$c-l-green: #64ffda;
 
 //Border
 $b-radius: 5px;
 
 //Logo
 $logo-small: 65px;
+
+// Text size
+$f-size-normal: 16px;
+$f-size-small: 0.9rem;
+$f-size-subheading: clamp(1.6rem, 5vw, 2rem);
+$f-size-heading: clamp(2.5rem, 8vw, 5rem);

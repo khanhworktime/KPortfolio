@@ -1,29 +1,76 @@
 
-@import "_font", "_variable", "header";
+@import "_font", "_variable", "mixin", "navbar", "greeting";
 
 html, body{
     background-color: $c-background !important;
     color: $c-slate !important;
-    font-size: 16px;
+    font-size: $f-size-normal !important;
+    font-family: $font-primary !important;
 }
 
+// A tag reset
 a, a:hover, a:focus, a:active {
     text-decoration: none !important;
     color: inherit !important;
 }
 
 a.button{
-    padding: 12px 16px;
+    font-family: $font-mono;
+    color: $c-l-green!important;
+    padding: 0.7rem 1.5rem!important;
     background: none;
-    border-color:$c-light-slate;
+    border-color:$c-l-slate;
     border-radius:4px;
     border-style:solid;
     border-width:1px;
     display: inline-block;
     transition: all 0.2s ease-in-out;
+    width: fit-content;
 }
 
 a.button:hover{
     background: rgba(238, 238, 238, .2);
     
+}
+
+//Scroller custom
+::-webkit-scrollbar {
+    width: 1.1rem;
+  }
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background-color: $c-slate;
+    border-radius: 20px;
+    border: 6px solid transparent;
+    background-clip: content-box;
+}
+
+// Text styling
+h1{
+    font-size: $f-size-heading!important;
+    font-weight: 600!important;
+}
+h2{
+    font-size: $f-size-subheading!important;
+    font-weight: 600!important;
+}
+em{
+    font-family: $font-mono;
+    font-style: italic;
+}
+p{
+    margin: 1.2rem 0!important;
+}
+
+// Content style
+.content{
+    padding: 0 50px;
+    @include tablet{
+        padding: 0 100px;
+    }
+    @include desktop{
+        padding: 0 150px;
+    }
 }

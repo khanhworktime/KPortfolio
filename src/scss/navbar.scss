@@ -1,8 +1,11 @@
 
 header{
     padding: 30px 40px;
-    position: relative;
+    position: fixed;
+    width: 100vw;
     font-family: $font-mono;
+    font-size: $f-size-small;
+    background: $c-background;
     .logo{
         width: $logo-small;
         height: $logo-small;
@@ -13,9 +16,9 @@ header{
         list-style: none;
         li{
             padding-left: 32px;
-            color: $c-light-green;
+            color: $c-l-green;
             .opt{
-                color: $c-light-slate;
+                color: $c-l-slate;
             }
             .opt:hover{
                 color: inherit;
@@ -60,7 +63,7 @@ header{
             width: 30px;
             height: 2px;
             border-radius: 4px;
-            background-color: $c-light-green;
+            background-color: $c-l-green;
             transition: transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0s;
             transform: rotate(0deg);
         }
@@ -73,7 +76,7 @@ header{
             width: 30px;
             height: 2px;
             border-radius: 4px;
-            background-color: $c-light-green;
+            background-color: $c-l-green;
             transition-timing-function: ease;
             transition-duration: 0.15s;
             transition-property: transform;
@@ -97,7 +100,7 @@ header{
             width: 30px;
             height: 2px;
             border-radius: 4px;
-            background-color: $c-light-green;
+            background-color: $c-l-green;
             transition: transform 0.22s cubic-bezier(0.215, 0.61, 0.355, 1) 0.12s;
             transform: rotate(225deg);
         }
@@ -110,7 +113,7 @@ header{
             width: 30px;
             height: 2px;
             border-radius: 4px;
-            background-color: $c-light-green;
+            background-color: $c-l-green;
             transition-timing-function: ease;
             transition-duration: 0.15s;
             transition-property: transform;

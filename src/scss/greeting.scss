@@ -1,0 +1,26 @@
+
+// Container
+.greeting{
+    min-height: 100vh;
+    max-width: 60rem;
+    .hi{
+        font-family: $font-mono;
+        color: $c-l-green;
+        font-size: 1rem;
+    }
+    .author-name{
+        color: $c-l-slate;
+    }
+    .author-desc{
+        width: 100%;
+        @include desktop{
+            width: 70%;
+        }
+        @include tablet{
+            width: 70%;
+        }
+    }
+    .button{
+        margin: 1.2rem 0;
+    }
+}
