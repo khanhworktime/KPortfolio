@@ -62,7 +62,7 @@ a.button:hover{
 
 // Text styling
 h1{
-    font-size: $f-size-heading;
+    font-size: $f-size-heading!important;
     font-weight: 900!important;
 }
 h2{

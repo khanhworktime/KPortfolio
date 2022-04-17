@@ -50,7 +50,7 @@ header{
             text-align: center;
             padding: 0;
             a{
-                transition: $trans-ease-in-out;
+                transition: $trans-ease-in-out!important;
                 &:hover{
                     color: $c-l-green!important;
                 }
