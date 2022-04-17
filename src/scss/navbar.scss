@@ -49,6 +49,12 @@ header{
             margin-bottom: 30px;
             text-align: center;
             padding: 0;
+            a{
+                transition: $trans-ease-in-out;
+                &:hover{
+                    color: $c-l-green!important;
+                }
+            }
         }
         .button{
             margin-left: 0!important;

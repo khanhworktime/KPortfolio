@@ -19,8 +19,8 @@ $logo-small: 65px;
 // Text size
 $f-size-normal: 16px;
 $f-size-small: 0.9rem;
-$f-size-subheading: clamp(1.6rem, 5vw, 2rem);
-$f-size-heading: clamp(2.5rem, 8vw, 5rem);
+$f-size-subheading: clamp(1.2rem, 4vw, 1.8rem)!important;
+$f-size-heading: clamp(2rem, 7vw, 5rem)!important;
 
 // Transition 
 $trans-ease-in-out: all 0.2s ease-in-out;

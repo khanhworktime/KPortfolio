@@ -51,6 +51,12 @@ header .side-menu li {
   text-align: center;
   padding: 0;
 }
+header .side-menu li a {
+  transition: all 0.2s ease-in-out;
+}
+header .side-menu li a:hover {
+  color: #64ffda !important;
+}
 header .side-menu .button {
   margin-left: 0 !important;
 }
@@ -369,11 +375,12 @@ a.button:hover {
 }
 
 h1 {
+  font-size: clamp(2rem, 7vw, 5rem) !important;
   font-weight: 900 !important;
 }
 
 h2 {
-  font-size: clamp(1.6rem, 5vw, 2rem) !important;
+  font-size: clamp(1.2rem, 4vw, 1.8rem) !important !important;
   font-weight: 700 !important;
 }
 
