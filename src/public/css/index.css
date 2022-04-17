@@ -1,11 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600;700&display=swap");
 header {
-  padding: 30px 40px;
+  z-index: 999;
+  padding: 15px 40px;
   position: fixed;
   width: 100vw;
   font-family: monospace;
   font-size: 0.9rem;
-  background: #0a192f;
+  background-color: #0a192f;
 }
 header .logo {
   width: 65px;
@@ -17,14 +18,7 @@ header .menu {
   list-style: none;
 }
 header .menu li {
-  padding-left: 32px;
-  color: #64ffda;
-}
-header .menu li .opt {
-  color: #ccd6f6;
-}
-header .menu li .opt:hover {
-  color: inherit;
+  margin-left: 1rem;
 }
 header .side-menu.closed {
   position: fixed;
@@ -126,14 +120,14 @@ header .ham-close .ham-box-inner::after {
   transform: rotate(-90deg);
 }
 
-.greeting {
-  min-height: 100vh;
-  max-width: 60rem;
-}
 .greeting .hi {
   font-family: monospace;
   color: #64ffda;
   font-size: 1rem;
+}
+.greeting em {
+  font-style: italic;
+  font-family: monospace;
 }
 .greeting .author-name {
   color: #ccd6f6;
@@ -155,11 +149,42 @@ header .ham-close .ham-box-inner::after {
   margin: 1.2rem 0;
 }
 
+.about-me {
+  position: relative;
+}
+.about-me .content img {
+  max-width: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+  filter: grayscale(40%);
+  margin-bottom: 2rem;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 10px 10px #112240;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .about-me .content img {
+    margin-right: 2rem;
+    margin-bottom: 0;
+    max-width: 40%;
+  }
+}
+@media (min-width: 1024px) {
+  .about-me .content img {
+    margin-right: 2rem;
+    margin-bottom: 0;
+    max-width: 40%;
+  }
+}
+.about-me .content img:hover {
+  filter: none;
+  box-shadow: 20px 20px #112240;
+}
+
 html, body {
   background-color: #0a192f !important;
   color: #8892b0 !important;
   font-size: 16px !important;
-  font-family: "Poppins" !important;
+  font-family: "Poppins", arial !important;
 }
 
 a, a:hover, a:focus, a:active {
@@ -185,8 +210,21 @@ a.button:hover {
   background: rgba(238, 238, 238, 0.2);
 }
 
+.numbered {
+  font-family: monospace;
+  font-weight: 500;
+  color: #64ffda;
+}
+.numbered .numbered-text {
+  font-weight: 700;
+  color: #ccd6f6;
+}
+.numbered .numbered-text:hover {
+  color: inherit;
+}
+
 ::-webkit-scrollbar {
-  width: 1.1rem;
+  width: 0.2rem;
 }
 
 ::-webkit-scrollbar-track {
@@ -196,7 +234,6 @@ a.button:hover {
 ::-webkit-scrollbar-thumb {
   background-color: #8892b0;
   border-radius: 20px;
-  border: 6px solid transparent;
   background-clip: content-box;
 }
 
@@ -211,26 +248,57 @@ h2 {
 }
 
 em {
-  font-family: monospace;
-  font-style: italic;
+  font-style: normal;
+  color: #64ffda;
 }
 
 p {
   margin: 1.2rem 0 !important;
 }
 
-.content {
-  padding: 0 50px;
+.container {
+  padding: 0 50px !important;
 }
 @media (min-width: 768px) and (max-width: 1023px) {
-  .content {
-    padding: 0 100px;
+  .container {
+    padding: 0 100px !important;
   }
 }
 @media (min-width: 1024px) {
-  .content {
-    padding: 0 150px;
+  .container {
+    padding: 0 150px !important;
   }
+}
+.container > div {
+  min-height: 100vh !important;
+  max-width: 65rem !important;
+  position: relative !important;
+}
+
+h2.heading {
+  position: relative;
+  width: 100%;
+  z-index: 1;
+  margin-bottom: 2rem;
+  height: 2rem;
+}
+h2.heading .numbered {
+  padding-right: 1.2rem;
+  position: absolute;
+  z-index: 1;
+  background-color: #0a192f !important;
+}
+h2.heading::after {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 0;
+  top: 1.25rem;
+  right: 0;
+  width: 100%;
+  height: 1px;
+  margin-left: 20px;
+  background-color: #8892b0;
 }
 
 /*# sourceMappingURL=index.css.map */

@@ -1,12 +1,13 @@
 
-// Container
 .greeting{
-    min-height: 100vh;
-    max-width: 60rem;
     .hi{
         font-family: $font-mono;
         color: $c-l-green;
         font-size: 1rem;
+    }
+    em{
+        font-style: italic;
+        font-family: $font-mono;
     }
     .author-name{
         color: $c-l-slate;

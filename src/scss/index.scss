@@ -1,5 +1,5 @@
 
-@import "_font", "_variable", "mixin", "navbar", "greeting";
+@import "_font", "_variable", "mixin", "navbar", "greeting", "about-me";
 
 html, body{
     background-color: $c-background !important;
@@ -24,7 +24,7 @@ a.button{
     border-style:solid;
     border-width:1px;
     display: inline-block;
-    transition: all 0.2s ease-in-out;
+    transition: $trans-ease-in-out;
     width: fit-content;
 }
 
@@ -33,9 +33,23 @@ a.button:hover{
     
 }
 
+//Text with number style
+.numbered{
+    font-family: $font-mono;
+    font-weight: 500;
+    color: $c-l-green;
+    .numbered-text{
+        font-weight: 700;
+        color: $c-l-slate;
+    }
+    .numbered-text:hover{
+        color: inherit;
+    }
+}
+
 //Scroller custom
 ::-webkit-scrollbar {
-    width: 1.1rem;
+    width: 0.2rem;
   }
 ::-webkit-scrollbar-track {
     background-color: transparent;
@@ -43,7 +57,6 @@ a.button:hover{
 ::-webkit-scrollbar-thumb {
     background-color: $c-slate;
     border-radius: 20px;
-    border: 6px solid transparent;
     background-clip: content-box;
 }
 
@@ -57,20 +70,52 @@ h2{
     font-weight: 600!important;
 }
 em{
-    font-family: $font-mono;
-    font-style: italic;
+    font-style: normal;
+    color: $c-l-green;
 }
 p{
     margin: 1.2rem 0!important;
 }
 
 // Content style
-.content{
-    padding: 0 50px;
+.container{
+    padding: 0 50px!important;
     @include tablet{
-        padding: 0 100px;
+        padding: 0 100px!important;
     }
     @include desktop{
-        padding: 0 150px;
+        padding: 0 150px!important;
+    }
+    & > div {
+        min-height: 100vh!important;
+        max-width: 65rem!important;
+        position: relative!important;
+    }
+}
+
+// Heading styling
+h2.heading{
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    margin-bottom: 2rem;
+    height: 2rem;
+    .numbered{
+        padding-right: 1.2rem;
+        position: absolute;
+        z-index: 1;
+        background-color: $c-background!important;
+    }
+    &::after{
+        content: "";
+        display: block;
+        position: absolute;
+        z-index: 0;
+        top: 1.25rem;
+        right: 0;
+        width: 100%;
+        height: 1px;
+        margin-left: 20px;
+        background-color: $c-slate;
     }
 }

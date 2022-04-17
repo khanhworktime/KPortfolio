@@ -1,11 +1,12 @@
 
 header{
-    padding: 30px 40px;
+    z-index: 999;
+    padding: 15px 40px;
     position: fixed;
     width: 100vw;
     font-family: $font-mono;
     font-size: $f-size-small;
-    background: $c-background;
+    background-color: $c-background;
     .logo{
         width: $logo-small;
         height: $logo-small;
@@ -15,14 +16,7 @@ header{
         transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
         list-style: none;
         li{
-            padding-left: 32px;
-            color: $c-l-green;
-            .opt{
-                color: $c-l-slate;
-            }
-            .opt:hover{
-                color: inherit;
-            }
+            margin-left: 1rem;
         }
     }
     .side-menu.closed{
