@@ -1,11 +1,12 @@
 
-@import "_font", "_variable", "mixin", "navbar", "greeting", "about-me", "project";
+@import "_font", "_variable", "mixin", "navbar", "greeting", "about-me", "project", "contact";
 
 html, body{
     background-color: $c-background !important;
     color: $c-slate !important;
     font-size: $f-size-normal !important;
     font-family: $font-primary !important;
+    font-weight: 600!important;
 }
 
 // A tag reset
@@ -63,11 +64,11 @@ a.button:hover{
 // Text styling
 h1{
     font-size: $f-size-heading!important;
-    font-weight: 600!important;
+    font-weight: 900!important;
 }
 h2{
     font-size: $f-size-subheading!important;
-    font-weight: 600!important;
+    font-weight: 700!important;
 }
 em{
     font-style: normal;
@@ -75,6 +76,10 @@ em{
 }
 p{
     margin: 1.2rem 0!important;
+}
+
+.mono{
+    font-family: $font-mono;
 }
 
 // Content style
@@ -90,6 +95,9 @@ p{
         min-height: 100vh!important;
         max-width: 65rem!important;
         position: relative!important;
+    }
+    .content{
+        height: 100%;
     }
 }
 
