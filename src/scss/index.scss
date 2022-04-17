@@ -1,5 +1,5 @@
 
-@import "_font", "_variable", "mixin", "navbar", "greeting", "about-me", "project", "contact";
+@import "_font", "_variable", "mixin", "navbar", "greeting", "about-me", "project", "contact", "footer";
 
 html, body{
     background-color: $c-background !important;
@@ -63,7 +63,6 @@ a.button:hover{
 
 // Text styling
 h1{
-    font-size: $f-size-heading!important;
     font-weight: 900!important;
 }
 h2{

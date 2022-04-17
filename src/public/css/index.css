@@ -281,6 +281,35 @@ header .ham-close .ham-box-inner::after {
   max-width: 45rem;
 }
 
+footer {
+  padding: 20px;
+}
+footer .fixed-email {
+  position: fixed;
+  margin: 0;
+  width: 300px;
+  bottom: -80px;
+  right: -3vw;
+  transform: rotate(90deg) translateX(-200px);
+  transition: all 0.2s ease-in-out;
+  background-color: #0a192f !important;
+}
+footer .fixed-email:hover {
+  color: #64ffda !important;
+}
+footer .fixed-email::before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 0;
+  top: 0.75rem;
+  right: 0;
+  width: 90px;
+  height: 2px;
+  margin-left: 2px;
+  background-color: #64ffda;
+}
+
 html, body {
   background-color: #0a192f !important;
   color: #8892b0 !important;
@@ -340,7 +369,6 @@ a.button:hover {
 }
 
 h1 {
-  font-size: clamp(2.5rem, 8vw, 5rem) !important;
   font-weight: 900 !important;
 }
 

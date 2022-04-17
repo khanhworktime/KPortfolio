@@ -1,0 +1,29 @@
+
+footer{
+    padding: 20px;
+    .fixed-email{
+        position: fixed;
+        margin: 0;
+        width: 300px;
+        bottom: -80px;
+        right: -3vw;
+        transform: rotate(90deg) translateX(-200px);
+        transition: $trans-ease-in-out;
+        background-color: $c-background!important;
+        &:hover{
+            color: $c-l-green!important;
+        }
+        &::before{
+            content: "";
+            display: block;
+            position: absolute;
+            z-index: 0;
+            top: 0.75rem;
+            right: 0;
+            width: 90px;
+            height: 2px;
+            margin-left: 2px;
+            background-color: $c-l-green;
+        }
+    }
+}
