@@ -1,0 +1,80 @@
+
+.project{
+    .content{
+        .project-item{
+            & > img{
+                max-width: 60%;
+                border-radius: $b-radius;
+                filter: grayscale(70%);
+                transition: $trans-ease-in-out;
+                box-shadow: 10px 10px $c-navy;
+                margin-right: 1.5rem;
+                &:hover{
+                    filter: none;
+                    box-shadow: 20px 20px $c-navy;
+                }
+            }
+            em{
+                font-family: $font-mono;
+            }
+            .name{
+                font-size: 2rem;
+                font-weight: 700;
+                color: $c-l-slate;
+            }
+            p em{
+                font: inherit;
+            }
+            .tech{
+                color: inherit;
+            }
+            .link{
+                margin-top: 1rem;
+                a{ 
+                    transition: $trans-ease-in-out;
+                    margin-left: 1rem;
+                    &:hover{
+                        text-decoration: underline!important;
+                    }
+                }
+                img{
+                    width: 2rem;
+                    height: 2rem;
+                    transition: $trans-ease-in-out;
+                    filter: invert(65%) sepia(5%) saturate(1636%) hue-rotate(188deg) brightness(89%) contrast(88%);
+                    &:hover{
+                        filter: invert(82%) sepia(2%) saturate(3825%) hue-rotate(194deg) brightness(106%) contrast(93%);
+                    }
+                }
+            }
+        }
+        #item1-md{
+            position: relative;
+            width: 100%;
+            height: fit-content;
+            .bg{
+                background-image: url("../../img/project/item1.jpg");
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                width:100%;
+                height: 100%;
+                position: absolute;
+                z-index: 0;
+                filter: grayscale(19%) sepia(100%) brightness(43%) hue-rotate(240deg) saturate(324%) contrast(78%) invert(9%);
+                -webkit-filter: grayscale(19%) sepia(100%) brightness(43%) hue-rotate(240deg) saturate(324%) contrast(78%) invert(9%);
+                -moz-filter: grayscale(19%) sepia(100%) brightness(43%) hue-rotate(240deg) saturate(324%) contrast(78%) invert(9%);            }
+            .project-desc{
+                width:100%;
+                height: 100%;
+                padding: 20px;
+                z-index: 1;
+                backdrop-filter: blur(2px);
+                .link a{
+                    margin-left: 0;
+                    margin-right: 1rem;
+                }
+            }
+        }
+    }
+}

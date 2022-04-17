@@ -1,5 +1,5 @@
 
-@import "_font", "_variable", "mixin", "navbar", "greeting", "about-me";
+@import "_font", "_variable", "mixin", "navbar", "greeting", "about-me", "project";
 
 html, body{
     background-color: $c-background !important;
@@ -95,6 +95,7 @@ p{
 
 // Heading styling
 h2.heading{
+    cursor: default;
     position: relative;
     width: 100%;
     z-index: 1;
@@ -116,6 +117,6 @@ h2.heading{
         width: 100%;
         height: 1px;
         margin-left: 20px;
-        background-color: $c-slate;
+        background-color: $c-l-navy;
     }
 }

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 header {
   z-index: 999;
   padding: 15px 40px;
@@ -19,6 +19,9 @@ header .menu {
 }
 header .menu li {
   margin-left: 1rem;
+}
+header .menu li .button {
+  margin-left: 1.2rem;
 }
 header .side-menu.closed {
   position: fixed;
@@ -41,6 +44,9 @@ header .side-menu li {
   margin-bottom: 30px;
   text-align: center;
   padding: 0;
+}
+header .side-menu .button {
+  margin-left: 0 !important;
 }
 header .menu-ham {
   width: 30px;
@@ -120,6 +126,9 @@ header .ham-close .ham-box-inner::after {
   transform: rotate(-90deg);
 }
 
+.greeting {
+  margin-top: 3rem;
+}
 .greeting .hi {
   font-family: monospace;
   color: #64ffda;
@@ -180,11 +189,86 @@ header .ham-close .ham-box-inner::after {
   box-shadow: 20px 20px #112240;
 }
 
+.project .content .project-item > img {
+  max-width: 60%;
+  border-radius: 5px;
+  filter: grayscale(70%);
+  transition: all 0.2s ease-in-out;
+  box-shadow: 10px 10px #112240;
+  margin-right: 1.5rem;
+}
+.project .content .project-item > img:hover {
+  filter: none;
+  box-shadow: 20px 20px #112240;
+}
+.project .content .project-item em {
+  font-family: monospace;
+}
+.project .content .project-item .name {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ccd6f6;
+}
+.project .content .project-item p em {
+  font: inherit;
+}
+.project .content .project-item .tech {
+  color: inherit;
+}
+.project .content .project-item .link {
+  margin-top: 1rem;
+}
+.project .content .project-item .link a {
+  transition: all 0.2s ease-in-out;
+  margin-left: 1rem;
+}
+.project .content .project-item .link a:hover {
+  text-decoration: underline !important;
+}
+.project .content .project-item .link img {
+  width: 2rem;
+  height: 2rem;
+  transition: all 0.2s ease-in-out;
+  filter: invert(65%) sepia(5%) saturate(1636%) hue-rotate(188deg) brightness(89%) contrast(88%);
+}
+.project .content .project-item .link img:hover {
+  filter: invert(82%) sepia(2%) saturate(3825%) hue-rotate(194deg) brightness(106%) contrast(93%);
+}
+.project .content #item1-md {
+  position: relative;
+  width: 100%;
+  height: fit-content;
+}
+.project .content #item1-md .bg {
+  background-image: url("../../img/project/item1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 0;
+  filter: grayscale(19%) sepia(100%) brightness(43%) hue-rotate(240deg) saturate(324%) contrast(78%) invert(9%);
+  -webkit-filter: grayscale(19%) sepia(100%) brightness(43%) hue-rotate(240deg) saturate(324%) contrast(78%) invert(9%);
+  -moz-filter: grayscale(19%) sepia(100%) brightness(43%) hue-rotate(240deg) saturate(324%) contrast(78%) invert(9%);
+}
+.project .content #item1-md .project-desc {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  z-index: 1;
+  backdrop-filter: blur(2px);
+}
+.project .content #item1-md .project-desc .link a {
+  margin-left: 0;
+  margin-right: 1rem;
+}
+
 html, body {
   background-color: #0a192f !important;
   color: #8892b0 !important;
   font-size: 16px !important;
-  font-family: "Poppins", arial !important;
+  font-family: "Raleway", sans-serif !important;
 }
 
 a, a:hover, a:focus, a:active {
@@ -276,6 +360,7 @@ p {
 }
 
 h2.heading {
+  cursor: default;
   position: relative;
   width: 100%;
   z-index: 1;
@@ -298,7 +383,7 @@ h2.heading::after {
   width: 100%;
   height: 1px;
   margin-left: 20px;
-  background-color: #8892b0;
+  background-color: #233554;
 }
 
 /*# sourceMappingURL=index.css.map */
