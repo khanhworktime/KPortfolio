@@ -1,26 +1,33 @@
-
-.about-me{
+.about-me {
     position: relative;
-    .content{
-        img{
+
+    .content {
+        margin-bottom: 12px;
+
+        img {
             max-width: 100%;
+            aspect-ratio: 1/1;
             object-fit: cover;
             border-radius: $b-radius;
             filter: grayscale(40%);
             margin-bottom: 2rem;
-            @include tablet{
+
+            @include tablet {
                 margin-right: 2rem;
                 margin-bottom: 0;
                 max-width: 40%;
             }
-            @include desktop{
+
+            @include desktop {
                 margin-right: 2rem;
                 margin-bottom: 0;
                 max-width: 40%;
             }
+
             transition: $trans-ease-in-out;
             box-shadow: 10px 10px $c-navy;
-            &:hover{
+
+            &:hover {
                 filter: none;
                 box-shadow: 20px 20px $c-navy;
             }

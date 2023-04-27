@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
 header {
   z-index: 999;
   position: fixed;
@@ -10,38 +9,31 @@ header {
   padding: 30px 55px;
   transition: all 0.2s ease-in-out;
 }
-
 header.scrolled {
   padding: 10px 20px;
   box-shadow: 0px 3px rgba(0, 0, 0, 0.2);
 }
-
 header .logo {
   width: 65px;
   height: 65px;
   cursor: pointer;
 }
-
 header .menu {
   transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
   list-style: none;
   margin: 0;
 }
-
 header .menu li {
   margin-left: 1rem;
 }
-
 header .menu li .button {
   margin-left: 1.2rem;
 }
-
 header .side-menu.closed {
   position: fixed;
   transform: translateX(100vw);
   visibility: hidden;
 }
-
 header .side-menu {
   position: fixed;
   padding: 0;
@@ -54,25 +46,20 @@ header .side-menu {
   width: 70vw;
   background-color: #112240;
 }
-
 header .side-menu li {
   margin-bottom: 30px;
   text-align: center;
   padding: 0;
 }
-
 header .side-menu li a {
   transition: all 0.2s ease-in-out !important;
 }
-
 header .side-menu li a:hover {
   color: #64ffda !important;
 }
-
 header .side-menu .button {
   margin-left: 0 !important;
 }
-
 header .menu-ham {
   width: 30px;
   height: 24px;
@@ -80,7 +67,6 @@ header .menu-ham {
   cursor: pointer;
   z-index: 999;
 }
-
 header .ham-stack .ham-box-inner {
   position: absolute;
   top: 50%;
@@ -92,9 +78,7 @@ header .ham-stack .ham-box-inner {
   transition: transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0s;
   transform: rotate(0deg);
 }
-
-header .ham-stack .ham-box-inner::before,
-header .ham-stack .ham-box-inner::after {
+header .ham-stack .ham-box-inner::before, header .ham-stack .ham-box-inner::after {
   content: "";
   display: block;
   position: absolute;
@@ -108,19 +92,16 @@ header .ham-stack .ham-box-inner::after {
   transition-duration: 0.15s;
   transition-property: transform;
 }
-
 header .ham-stack .ham-box-inner::before {
   width: 120%;
   top: -10px;
   opacity: 1;
 }
-
 header .ham-stack .ham-box-inner::after {
   width: 80%;
   bottom: -10px;
   transform: rotate(0deg);
 }
-
 header .ham-close .ham-box-inner {
   position: absolute;
   top: 50%;
@@ -132,9 +113,7 @@ header .ham-close .ham-box-inner {
   transition: transform 0.22s cubic-bezier(0.215, 0.61, 0.355, 1) 0.12s;
   transform: rotate(225deg);
 }
-
-header .ham-close .ham-box-inner::before,
-header .ham-close .ham-box-inner::after {
+header .ham-close .ham-box-inner::before, header .ham-close .ham-box-inner::after {
   content: "";
   display: block;
   position: absolute;
@@ -148,13 +127,11 @@ header .ham-close .ham-box-inner::after {
   transition-duration: 0.15s;
   transition-property: transform;
 }
-
 header .ham-close .ham-box-inner::before {
   width: 100%;
   top: 0px;
   opacity: 0;
 }
-
 header .ham-close .ham-box-inner::after {
   width: 100%;
   bottom: 0px;
@@ -164,38 +141,31 @@ header .ham-close .ham-box-inner::after {
 .greeting {
   margin-top: 3rem;
 }
-
 .greeting .hi {
   font-family: monospace;
   color: #64ffda;
   font-size: 1rem;
 }
-
 .greeting em {
   font-style: italic;
   font-family: monospace;
 }
-
 .greeting .author-name {
   color: #ccd6f6;
 }
-
 .greeting .author-desc {
   width: 100%;
 }
-
 @media (min-width: 1024px) {
   .greeting .author-desc {
     width: 70%;
   }
 }
-
 @media (min-width: 768px) and (max-width: 1023px) {
   .greeting .author-desc {
     width: 70%;
   }
 }
-
 .greeting .button {
   margin: 1.2rem 0;
 }
@@ -203,9 +173,12 @@ header .ham-close .ham-box-inner::after {
 .about-me {
   position: relative;
 }
-
+.about-me .content {
+  margin-bottom: 12px;
+}
 .about-me .content img {
   max-width: 100%;
+  aspect-ratio: 1/1;
   object-fit: cover;
   border-radius: 5px;
   filter: grayscale(40%);
@@ -213,7 +186,6 @@ header .ham-close .ham-box-inner::after {
   transition: all 0.2s ease-in-out;
   box-shadow: 10px 10px #112240;
 }
-
 @media (min-width: 768px) and (max-width: 1023px) {
   .about-me .content img {
     margin-right: 2rem;
@@ -221,7 +193,6 @@ header .ham-close .ham-box-inner::after {
     max-width: 40%;
   }
 }
-
 @media (min-width: 1024px) {
   .about-me .content img {
     margin-right: 2rem;
@@ -229,7 +200,6 @@ header .ham-close .ham-box-inner::after {
     max-width: 40%;
   }
 }
-
 .about-me .content img:hover {
   filter: none;
   box-shadow: 20px 20px #112240;
@@ -239,8 +209,7 @@ header .ham-close .ham-box-inner::after {
   margin-bottom: 20px;
   gap: 8px;
 }
-
-.project .content .project-item>img {
+.project .content .project-item > img {
   max-width: 60%;
   border-radius: 5px;
   filter: grayscale(70%);
@@ -248,60 +217,48 @@ header .ham-close .ham-box-inner::after {
   box-shadow: 10px 10px #112240;
   margin-right: 1.5rem;
 }
-
-.project .content .project-item>img:hover {
+.project .content .project-item > img:hover {
   filter: none;
   box-shadow: 20px 20px #112240;
 }
-
 .project .content .project-item em {
   font-family: monospace;
 }
-
 .project .content .project-item .name {
   font-size: 2rem;
   font-weight: 700;
   color: #ccd6f6;
 }
-
 .project .content .project-item p em {
   font: inherit;
 }
-
 .project .content .project-item .tech {
   color: inherit;
 }
-
 .project .content .project-item .link {
   margin-top: 1rem;
 }
-
 .project .content .project-item .link a {
   transition: all 0.2s ease-in-out;
   margin-left: 1rem;
 }
-
 .project .content .project-item .link a:hover {
   text-decoration: underline !important;
 }
-
 .project .content .project-item .link img {
   width: 2rem;
   height: 2rem;
   transition: all 0.2s ease-in-out;
   filter: invert(65%) sepia(5%) saturate(1636%) hue-rotate(188deg) brightness(89%) contrast(88%);
 }
-
 .project .content .project-item .link img:hover {
   filter: invert(82%) sepia(2%) saturate(3825%) hue-rotate(194deg) brightness(106%) contrast(93%);
 }
-
 .project .content #item1-md {
   position: relative;
   width: 100%;
   height: fit-content;
 }
-
 .project .content #item1-md .bg {
   background-image: url("../../img/project/item1.jpg");
   background-position: center;
@@ -315,7 +272,6 @@ header .ham-close .ham-box-inner::after {
   -webkit-filter: grayscale(19%) sepia(100%) brightness(43%) hue-rotate(240deg) saturate(324%) contrast(78%) invert(9%);
   -moz-filter: grayscale(19%) sepia(100%) brightness(43%) hue-rotate(240deg) saturate(324%) contrast(78%) invert(9%);
 }
-
 .project .content #item1-md .project-desc {
   width: 100%;
   height: 100%;
@@ -323,18 +279,15 @@ header .ham-close .ham-box-inner::after {
   z-index: 1;
   backdrop-filter: blur(2px);
 }
-
 .project .content #item1-md .project-desc .link a {
   margin-left: 0;
   margin-right: 1rem;
 }
-
 .project .content #item2-md {
   position: relative;
   width: 100%;
   height: fit-content;
 }
-
 .project .content #item2-md .bg {
   background-image: url("https://res.cloudinary.com/du0sz12nf/image/upload/v1682561184/Personal%20Stubs/Personal_Branding_lg08c6.png");
   background-position: center;
@@ -348,7 +301,6 @@ header .ham-close .ham-box-inner::after {
   -webkit-filter: grayscale(19%) sepia(100%) brightness(43%) hue-rotate(240deg) saturate(324%) contrast(78%) invert(9%);
   -moz-filter: grayscale(19%) sepia(100%) brightness(43%) hue-rotate(240deg) saturate(324%) contrast(78%) invert(9%);
 }
-
 .project .content #item2-md .project-desc {
   width: 100%;
   height: 100%;
@@ -356,7 +308,6 @@ header .ham-close .ham-box-inner::after {
   z-index: 1;
   backdrop-filter: blur(2px);
 }
-
 .project .content #item2-md .project-desc .link a {
   margin-left: 0;
   margin-right: 1rem;
@@ -365,12 +316,10 @@ header .ham-close .ham-box-inner::after {
 .contact .content {
   padding: 150px 0;
 }
-
 .contact .content h1 {
   color: #ccd6f6;
   padding-inline: 100px;
 }
-
 .contact .content p {
   max-width: 45rem;
 }
@@ -378,7 +327,6 @@ header .ham-close .ham-box-inner::after {
 footer {
   padding: 20px;
 }
-
 footer .fixed-email {
   position: fixed;
   margin: 0;
@@ -389,11 +337,9 @@ footer .fixed-email {
   transition: all 0.2s ease-in-out;
   background-color: #0a192f !important;
 }
-
 footer .fixed-email:hover {
   color: #64ffda !important;
 }
-
 footer .fixed-email::before {
   content: "";
   display: block;
@@ -407,8 +353,7 @@ footer .fixed-email::before {
   background-color: #64ffda;
 }
 
-html,
-body {
+html, body {
   background-color: #0a192f !important;
   color: #8892b0 !important;
   font-size: 16px !important;
@@ -416,10 +361,7 @@ body {
   font-weight: 600 !important;
 }
 
-a,
-a:hover,
-a:focus,
-a:active {
+a, a:hover, a:focus, a:active {
   text-decoration: none !important;
   color: inherit !important;
 }
@@ -447,12 +389,10 @@ a.button:hover {
   font-weight: 500;
   color: #64ffda;
 }
-
 .numbered .numbered-text {
   font-weight: 700;
   color: #ccd6f6;
 }
-
 .numbered .numbered-text:hover {
   color: inherit;
 }
@@ -472,12 +412,12 @@ a.button:hover {
 }
 
 h1 {
-  font-size: clamp(2rem, 7vw, 5rem) !important;
+  font-size: clamp(2rem, 7vw, 5rem) !important !important;
   font-weight: 900 !important;
 }
 
 h2 {
-  font-size: clamp(1rem, 2vw, 1.6rem) !important;
+  font-size: clamp(1rem, 2vw, 1.6rem) !important !important;
   font-weight: 700 !important;
 }
 
@@ -497,25 +437,21 @@ p {
 .container {
   padding: 0 50px !important;
 }
-
 @media (min-width: 768px) and (max-width: 1023px) {
   .container {
     padding: 0 100px !important;
   }
 }
-
 @media (min-width: 1024px) {
   .container {
     padding: 0 150px !important;
   }
 }
-
-.container>div {
+.container > div {
   min-height: 100vh !important;
   max-width: 65rem !important;
   position: relative !important;
 }
-
 .container .content {
   height: 100%;
 }
@@ -528,14 +464,12 @@ h2.heading {
   margin-bottom: 2rem;
   height: 2rem;
 }
-
 h2.heading .numbered {
   padding-right: 1.2rem;
   position: absolute;
   z-index: 1;
   background-color: #0a192f !important;
 }
-
 h2.heading::after {
   content: "";
   display: block;
