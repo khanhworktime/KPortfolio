@@ -472,12 +472,12 @@ a.button:hover {
 }
 
 h1 {
-  font-size: clamp(2rem, 7vw, 5rem) !important !important;
+  font-size: clamp(2rem, 7vw, 5rem) !important;
   font-weight: 900 !important;
 }
 
 h2 {
-  font-size: clamp(1rem, 2vw, 1.6rem) !important !important;
+  font-size: clamp(1rem, 2vw, 1.6rem) !important;
   font-weight: 700 !important;
 }
 
