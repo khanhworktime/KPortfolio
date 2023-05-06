@@ -1,7 +1,7 @@
 .project {
     .content {
         .project-item {
-            margin-bottom: 20px;
+            margin-bottom: 45px;
             gap: 8px;
 
             &>img {
@@ -38,10 +38,17 @@
 
             .link {
                 margin-top: 1rem;
+                display: flex;
+                gap: 12px;
+
+                &.odd {
+                    justify-content: end;
+                }
 
                 a {
                     transition: $trans-ease-in-out;
-                    margin-left: 1rem;
+
+
 
                     &:hover {
                         text-decoration: underline !important;

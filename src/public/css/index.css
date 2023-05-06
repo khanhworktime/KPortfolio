@@ -206,7 +206,7 @@ header .ham-close .ham-box-inner::after {
 }
 
 .project .content .project-item {
-  margin-bottom: 20px;
+  margin-bottom: 45px;
   gap: 8px;
 }
 .project .content .project-item > img {
@@ -237,10 +237,14 @@ header .ham-close .ham-box-inner::after {
 }
 .project .content .project-item .link {
   margin-top: 1rem;
+  display: flex;
+  gap: 12px;
+}
+.project .content .project-item .link.odd {
+  justify-content: end;
 }
 .project .content .project-item .link a {
   transition: all 0.2s ease-in-out;
-  margin-left: 1rem;
 }
 .project .content .project-item .link a:hover {
   text-decoration: underline !important;
